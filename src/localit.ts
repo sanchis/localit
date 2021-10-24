@@ -141,6 +141,9 @@ export const localit = {
   bust(): void {
     store.clear();
   },
+  onStore(callback): void {
+    window.onstorage = callback;
+  },
 };
 
 export type TLocalit = typeof localit;
